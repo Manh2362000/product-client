@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>ProductList</servlet-name>
+        <servlet-class>com.example.productclient.controller.ListProductController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductList</servlet-name>
+        <url-pattern>/List</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateProduct</servlet-name>
+        <servlet-class>com.example.productclient.controller.CreateProductController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateProduct</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateProduct</servlet-name>
+        <servlet-class>com.example.productclient.controller.UpdateProductController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProduct</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+</web-app>
